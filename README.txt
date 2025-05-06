@@ -1,29 +1,8 @@
-# CheckPoint2 (.NET + Oracle)
+Sistema de Gestão em Camadas (.NET + Oracle)
 
-**Autor:** João Victor Soares Rodrigues  
-**RM:** 551410
+Autor: João Victor Soares Rodrigues  
+RM: 551410
 
----
+Projeto acadêmico desenvolvido em C# com arquitetura em camadas e integração com banco Oracle. O sistema permite login, listagem de funcionários e produtos, e realiza cálculos simples, como total de registros e médias. As regras de negócio e o acesso ao banco estão organizados em camadas separadas, seguindo boas práticas de desenvolvimento.
 
-## 📚 Descrição
-
-Projeto acadêmico desenvolvido em C# com arquitetura em camadas (Model, DAL, BLL, UI) e integração com banco de dados Oracle. Permite autenticação, listagem e cálculos sobre funcionários e produtos, aplicando boas práticas de separação de responsabilidades.
-
----
-
-## 🗂️ Estrutura do Projeto
-
-Fiap.Estrutura.Model // Entidades (Usuário, Funcionário, Produto)
-Fiap.Estrutura.DAL // Acesso ao Oracle (SELECT nas tabelas)
-Fiap.Estrutura.BLL // Regras de negócio e validações
-Fiap.Estrutura.UI // Interface console (menu e interação)
-
-
----
-
-## 🛠️ Tecnologias
-
-- C# (.NET 8.0)
-- Oracle Database
-
----
+Principais tecnologias: .NET, Oracle Database
