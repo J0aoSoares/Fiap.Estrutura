@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Fiap.Estrutura.Model\Fiap.Estrutura.Model.csproj" />
+    <ProjectReference Include="..\Fiap.Estrutura.BLL\Fiap.Estrutura.BLL.csproj" />
   </ItemGroup>
 
 </Project>

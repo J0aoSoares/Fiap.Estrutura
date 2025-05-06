@@ -1,25 +1,16 @@
 ﻿using System;
-using System.Data;
 using Oracle.ManagedDataAccess.Client;
 
 namespace Fiap.Estrutura.DAL
 {
     public class ConexaoOracle
     {
-        // Altere a string de conexão conforme seu ambiente
-        private static readonly string StringConexao = "Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=localhost)(PORT=1521)))(CONNECT_DATA=(SERVICE_NAME=XEPDB1)));User Id=seu_usuario;Password=sua_senha;";
+        private static readonly string StringConexao =
+            "Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=oracle.fiap.com.br)(PORT=1521))(CONNECT_DATA=(SID=ORCL)));User Id=rm551410;Password=220205;";
 
         public static OracleConnection ObterConexao()
         {
-            try
-            {
-                OracleConnection conexao = new OracleConnection(StringConexao);
-                return conexao;
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("Erro ao conectar com Oracle: " + ex.Message);
-            }
+            return new OracleConnection(StringConexao);
         }
     }
 }
